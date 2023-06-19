@@ -39,8 +39,8 @@ const Project = () => {
     {
       img: profile,
       name: "My-Profile",
-      github_link: "https://github.com/Sridhar-C-25",
-      live_link: "https://vuecountry05.netlify.app",
+      github_link: "https://github.com/EvanBahr/my-profile",
+      live_link: "https://evanbahr.vercel.app/",
     },
   ];
   return (
