@@ -1,26 +1,72 @@
 import React from "react";
-
+import { FaBootstrap, FaNodeJs } from "react-icons/fa";
+import {
+  SiFirebase,
+  SiJavascript,
+  SiMongodb,
+  SiNextdotjs,
+  SiPostman,
+  SiReact,
+} from "react-icons/si";
+import { DiHtml5 } from "react-icons/di";
+import { FaCss3Alt } from "react-icons/fa";
+import { SiTailwindcss } from "react-icons/si";
 const Skills = () => {
   const skills = [
     {
-      logo: "logo-html5",
-      level: "Advance",
-      count: 86,
+      logo: FaNodeJs,
+      name: "node js",
+      count: 100,
     },
     {
-      logo: "logo-css3",
-      level: "Expect",
-      count: 90,
+      logo: SiJavascript,
+      name: "Javasript",
+      count: 100,
     },
     {
-      logo: "logo-nodejs",
-      level: "Beginner",
-      count: 40,
+      logo: DiHtml5,
+      name: "HTML 5",
+      count: 100,
     },
     {
-      logo: "logo-react",
-      level: "Intermediate",
-      count: 80,
+      logo: FaCss3Alt,
+      name: "Css 3",
+      count: 100,
+    },
+    {
+      logo: SiTailwindcss,
+      name: "Tailwindcss",
+      count: 100,
+    },
+    {
+      logo: SiNextdotjs,
+      name: "Next js",
+      count: 100,
+    },
+    // {
+    //   logo: SiFirebase,
+    //   name: "Firebase",
+    //   count: 100,
+    // },
+    {
+      logo: FaBootstrap,
+      name: "Bootstrap",
+      count: 100,
+    },
+    {
+      logo: SiPostman,
+      name: "Postman",
+      count: 100,
+    },
+    {
+      logo: SiReact,
+      name: "React Js",
+      count: 100,
+    },
+    {
+      logo: SiMongodb,
+      name: "mongodb",
+      count: 100,
     },
   ];
   return (
@@ -43,10 +89,10 @@ const Skills = () => {
                 className="w-32 h-32 flex items-center justify-center rounded-full"
               >
                 <div className="text-6xl w-28 h-28 bg-gray-900 rounded-full flex items-center justify-center group-hover:text-cyan-600">
-                  <ion-icon name={skill.logo}></ion-icon>
+                  <skill.logo></skill.logo>
                 </div>
               </div>
-              <p className="text-xl mt-3">{skill.level}</p>
+              <p className="text-xl mt-3">{skill.name}</p>
             </div>
           ))}
         </div>

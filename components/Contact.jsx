@@ -1,12 +1,23 @@
 import React from "react";
-
+import { FaWhatsapp } from "react-icons/fa";
+import { MdOutlineEmail } from "react-icons/md";
+import { BiMap } from "react-icons/bi";
 const Contact = () => {
   const contact_info = [
-    { logo: "mail", text: "codeaprogram@gmail.com" },
-    { logo: "logo-whatsapp", text: "123 456 780" },
     {
-      logo: "location",
-      text: "demo location",
+      logo: MdOutlineEmail,
+      text: "evanbahrdev@gmail.com",
+      link: "mailto:evanbahrdev@gmail.com",
+    },
+    {
+      logo: FaWhatsapp,
+      text: "0878 6004 8693",
+      link: "whatsapp://send?phone=6285860048693",
+    },
+    {
+      logo: BiMap,
+      text: "Surabaya, Indonesia",
+      link: "https://www.google.com/maps?q=Surabaya,+Indonesia",
     },
   ];
   return (
@@ -34,12 +45,16 @@ const Contact = () => {
                 className="flex flex-row  
                   text-left gap-4 flex-wrap items-center"
               >
-                <div className="min-w-[3.5rem]  text-3xl min-h-[3.5rem] flex items-center justify-center text-white bg-cyan-600 rounded-full">
-                  <ion-icon name={contact.logo}></ion-icon>
+                <div className="cursor-pointer min-w-[3.5rem]  text-3xl min-h-[3.5rem] flex items-center justify-center text-white bg-cyan-600 rounded-full">
+                  <contact.logo />
                 </div>
-                <p className="md:text-base text-sm  break-words">
+                <a
+                  target="_blank"
+                  className="md:text-base text-sm  break-words hover:text-blue-500"
+                  href={contact.link}
+                >
                   {contact.text}
-                </p>
+                </a>
               </div>
             ))}
           </div>

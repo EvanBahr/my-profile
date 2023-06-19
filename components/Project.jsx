@@ -1,11 +1,10 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import project1 from "../assets/images/project-1.png";
-import project2 from "../assets/images/project-2.jpg";
-import project3 from "../assets/images/project-3.jpg";
-import project4 from "../assets/images/project-4.jpg";
-import project5 from "../assets/images/project-5.png";
-import project_person from "../assets/images/project_person1.png";
+import SimpleTodoList from "../assets/images/SimpleTodoList.png";
+import calculator from "../assets/images/calculator.png";
+import simplecashier from "../assets/images/simple-cashier.png";
+import netflix from "../assets/images/netflix.png";
+import profile from "../assets/images/profile.png";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination, Autoplay } from "swiper";
@@ -14,33 +13,32 @@ import Image from "next/image";
 const Project = () => {
   const projects = [
     {
-      img: project1,
-      name: "Movie App",
-      github_link: "https://github.com/Sridhar-C-25",
-      live_link: "https://myreactflix.netlify.app",
+      img: SimpleTodoList,
+      name: "Simple Todo List",
+      github_link: "https://github.com/EvanBahr/SimpleTodoList",
+      live_link: "https://evanbahr-simpletodolist.vercel.app/",
     },
     {
-      img: project2,
-      name: "Job search Web App",
-      github_link: "https://github.com/Sridhar-C-25/jobsearchapp",
-      live_link: "https://myjobsearch.netlify.app",
+      img: calculator,
+      name: "calculator",
+      github_link: "https://github.com/EvanBahr/calculator",
+      live_link: "https://evan-calculator.vercel.app/",
     },
     {
-      img: project3,
-      name: "Highking",
-      github_link: "https://github.com/Sridhar-C-25/highking",
-      live_link: "https://highking01.netlify.app",
+      img: simplecashier,
+      name: "Simple Cashier",
+      github_link: "https://github.com/EvanBahr/simple-cashier",
+      live_link: "https://evan-simple-cashier.vercel.app/",
     },
     {
-      img: project4,
-      name: "React Nav",
-      github_link:
-        "https://github.com/Sridhar-C-25/reacttailwindnavbar-with-dropdown",
-      live_link: "https://reacttailwindnavbar.netlify.app",
+      img: netflix,
+      name: "netflix-clone",
+      github_link: "https://github.com/EvanBahr/netflix",
+      live_link: "https://evan-net.vercel.app/",
     },
     {
-      img: project5,
-      name: "Vue Country",
+      img: profile,
+      name: "My-Profile",
       github_link: "https://github.com/Sridhar-C-25",
       live_link: "https://vuecountry05.netlify.app",
     },
@@ -54,8 +52,8 @@ const Project = () => {
         <p className="text-gray-400 mt-3 text-lg">My awesome works</p>
       </div>
       <br />
-      <div className="flex max-w-6xl gap-6 px-5 mx-auto items-center relative">
-        <div className="lg:w-2/3 w-full">
+      <div className="max-w-6xl gap-6 px-5 mx-auto items-center relative">
+        <div className=" w-full">
           <Swiper
             slidesPerview={1.2}
             spaceBetween={20}
@@ -78,9 +76,10 @@ const Project = () => {
                 <div className="h-fit w-full p-4 bg-slate-700 rounded-xl">
                   <div>
                     <Image
+                      href={project_info.live_link}
                       src={project_info.img}
                       alt=""
-                      className="rounded-lg"
+                      className="rounded-lg cursor-pointer"
                     />
                   </div>
                   <h3 className="text-xl my-4">{project_info.name}</h3>
@@ -104,9 +103,6 @@ const Project = () => {
               </SwiperSlide>
             ))}
           </Swiper>
-        </div>
-        <div className="lg:block hidden">
-          <Image src={project_person} alt="" />
         </div>
       </div>
     </section>
