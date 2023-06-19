@@ -17,10 +17,10 @@ const Hireme = () => {
             Are you in need of a skilled React.js Front-end Developer? Look no
             further! I bring expertise in building captivating web applications,
             responsive designs, and smooth user experiences. With my proficiency
-            in HTML, CSS, and JavaScript, I'm ready to collaborate with you on
-            your next project. Let's enhance your digital presence and engage
-            users with cutting-edge technology. Don't miss the opportunity to
-            work together; reach out today and let's create something
+            in HTML, CSS, and JavaScript, Im ready to collaborate with you on
+            your next project. Lets enhance your digital presence and engage
+            users with cutting-edge technology. Dont miss the opportunity to
+            work together; reach out today and lets create something
             extraordinary!
           </p>
           {/* <button className="btn-primary mt-10">Say Hello</button> */}
