@@ -16,6 +16,7 @@ const Project = () => {
       img: SimpleTodoList,
       name: "Simple Todo List",
       github_link: "https://github.com/EvanBahr/SimpleTodoList",
+
       live_link: "https://evanbahr-simpletodolist.vercel.app/",
     },
     {
