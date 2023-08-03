@@ -27,8 +27,8 @@ const Project = () => {
     {
       img: simplecashier,
       name: "Simple Cashier",
-      github_link: "https://github.com/EvanBahr/simple-cashier",
-      live_link: "https://evan-simple-cashier.vercel.app/",
+      github_link: "https://evanbahr-simplecashierapp.vercel.app/",
+      live_link: "https://github.com/EvanBahr/cashier-app-reborn",
     },
     {
       img: netflix,
